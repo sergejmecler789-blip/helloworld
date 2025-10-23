@@ -1,17 +1,15 @@
+package hw4;
 
 public class Task6 {
     public static void main(String[] args) {
-        int one = 1;
-        int two = 5;
-        int three = 9;
+        int passengers = 102;
 
-        if (one > two && one > three) {
-            System.out.println(one);
-        } else if (two > one && two > three) {
-            System.out.println(two);
+        if (passengers < 60) {
+            System.out.println("Есть сидячие места");
+        } else if (passengers < 102) {
+            System.out.println("Есть стоячие места");
         } else {
-            System.out.println(three);
+            System.out.println("Вагон полностью забит");
         }
     }
-
 }
