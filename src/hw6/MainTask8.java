@@ -1,15 +1,13 @@
 package hw6;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class MainTask8 {
     public static void main(String[] args) {
         int monthlySavings = 29000;
         int totalSavings = 0;
-        for( int month = 12; month >= 1; month--) {
-            totalSavings = monthlySavings * (13 - month);
-            System.out.println("Месяц " + (13 - month) + ", сумма накоплений равна " + totalSavings + " рублей");
 
+        for (int month = 1; month <= 12; month++) {
+            totalSavings += monthlySavings;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalSavings + " рублей");
         }
     }
 }
